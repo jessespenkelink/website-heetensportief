@@ -1,13 +1,48 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
-
+                <div class="footer-container-main">
+                    <div class="footer-main-wrapper">
+                        <div class="footer-block footer-block-1">
+                            <h3>Algemeen</h3>
+                            <a>Home</a>
+                            <a>Nieuws</a>
+                            <a>Algemeen</a>
+                            <a>Commissies</a>
+                            <a>Contact</a>
+                            <a>Sponsors</a>
+                        </div>
+                        <div class="footer-block footer-block-2">
+                            <h3>Contact</h3>
+                            <p>Secretariaat Heeten</p>
+                            <p>Sportief</p>
+                            <p>Holterweg 19</p>
+                            <p>8111BA Heeten</p>
+                            <p>Tel: 0572-382140</p>
+                        </div>
+                        <div class="footer-block footer-block-3">
+                            <h3>Sporthal</h3>
+                            <p>Dorpstraat 3</p>
+                            <p>8111 AA Heeten</p>
+                        </div>
+                        <div class="footer-block footer-block-4">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png">
+                            <img class="footer-img" src="<?php echo get_template_directory_uri(); ?>/img/footer-img.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-container-bottom">
+                    <div class="footer-main-wrapper">
+                        <p class="footer-bottom-left">
+                            &copy; <?php echo date('Y'); ?> Heeten Sportief - All Rights Reserved.
+                        </p>
+                        <p class="footer-bottom-right">
+                            Made with &hearts; by Jesse Spenkelink
+                        </p>
+                    </div>
+                </div>
 			</footer>
 			<!-- /footer -->
 

@@ -101,7 +101,21 @@
 </div>
 
 <main>
-
+    <!-- fotoalbum blok -->
+    <div class="fotoalbum-container">
+        <div class="fotoalbum-container-images">
+            <div class="image-round-big">
+                <img src="<?php echo get_field("fotoalbum_afbeelding_1"); ?>" alt="afbeelding_1">
+            </div>
+            <div class="image-round-small">
+                <img src="<?php echo get_field("fotoalbum_afbeelding_2"); ?>" alt="afbeelding_2">
+            </div>
+        </div>
+        <div class="fotoalbum-container-content">
+            <h2><?php echo get_field("fotoalbum_titel"); ?></h2>
+            <p><?php echo get_field("fotoalbum_ondertekst"); ?></p>
+        </div>
+    </div>
 </main>
 
 <?php get_footer(); ?>

@@ -62,6 +62,19 @@ if (function_exists('add_theme_support'))
 	Functions
 \*------------------------------------*/
 
+function custom_excerpt($x, $length)
+{
+    if(strlen($x)<=$length)
+    {
+        echo $x;
+    }
+    else
+    {
+        $y=substr($x,0,$length) . '...';
+        echo $y;
+    }
+}
+
 // HTML5 Blank navigation
 function html5blank_nav()
 {
