@@ -10,7 +10,7 @@
 
 <div class="sub-navigation">
     <div class="nav-block">
-        <a href="">
+        <a href="/volleybal">
             <img src="<?php echo get_field('navigatie_blok_1_foto'); ?>" alt="nav-block-1">
             <p>
                 Ga naar<span><?php echo get_field('navigatie_blok_1_tekst'); ?></span>
@@ -18,7 +18,7 @@
         </a>
     </div>
     <div class="nav-block">
-        <a href="">
+        <a href="/streetdance">
             <img src="<?php echo get_field('navigatie_blok_2_foto'); ?>" alt="nav-block-2">
             <p>
                 Ga naar<span><?php echo get_field('navigatie_blok_2_tekst'); ?></span>
@@ -26,23 +26,23 @@
         </a>
     </div>
     <div class="nav-block">
-        <a href="">
+        <a href="/turnen">
             <img src="<?php echo get_field('navigatie_blok_3_foto'); ?>" alt="nav-block-3">
             <p>
                 Ga naar<span><?php echo get_field('navigatie_blok_3_tekst'); ?></span>
             </p>
         </a>
     </div>
-    <div class="nav-block">
-        <a href="">
+    <div class="nav-block last-2">
+        <a href="/gymnastiek">
             <img src="<?php echo get_field('navigatie_blok_4_foto'); ?>" alt="nav-block-4">
             <p>
                 Ga naar<span><?php echo get_field('navigatie_blok_4_tekst'); ?></span>
             </p>
         </a>
     </div>
-    <div class="nav-block">
-        <a href="">
+    <div class="nav-block last-2">
+        <a href="/steps">
             <img src="<?php echo get_field('navigatie_blok_5_foto'); ?>" alt="nav-block-5">
             <p>
                 Ga naar<span><?php echo get_field('navigatie_blok_5_tekst'); ?></span>

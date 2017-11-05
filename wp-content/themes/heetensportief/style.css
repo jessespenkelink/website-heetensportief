@@ -55,6 +55,9 @@ body {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 	font-weight: 100 !important;
 }
+hr {
+	border: 1px solid #27ae60;
+}
 a {
 	color: #27ae60;
 }
@@ -146,13 +149,112 @@ input:focus {
 	z-index: 10;
 }
 
+iframe {
+	max-width: 100%;
+}
+
 main {
 	width: 100%;
 	max-width: 1024px;
 	position: relative;
 	display: block;
 	margin: 100px auto;
+	padding: 0 40px;
 }
+
+form {
+	position: relative;
+}
+
+label#contact-message {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	width: calc(50% - 40px);
+}
+
+label#contact-message .message {
+	position: absolute;
+	top: -30px;
+	left: 10px;
+	color: rgb(117, 117, 117);
+	pointer-events: none;
+	-webkit-text-security: none;
+	word-wrap: normal;
+	white-space: pre;
+	line-height: initial;
+	-webkit-user-modify: read-only;
+}
+
+input[type='submit'] {
+	border: none;
+	padding: 10px 40px;
+	color: #ffffff;
+	background-color: #57666e;
+	transition: 0.3s;
+}
+
+span.wpcf7-not-valid-tip {
+	display: none !important;
+}
+
+input[type='submit']:hover {
+	background-color: #27ae60;
+}
+
+input[type='text'], input[type='email'] {
+	border: 0;
+  border-bottom-width: 0px;
+  border-bottom-style: none;
+  border-bottom-color: currentcolor;
+	border-bottom: 1px solid #57666e;
+	padding: 10px;
+	background: transparent;
+	width: 50%;
+	display: block;
+	margin: 25px 0;
+}
+
+input[type='text'].wpcf7-not-valid, input[type='email'].wpcf7-not-valid {
+    border-bottom: 1px solid #D24D57;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-mail-sent-ng {
+	border: 1px solid #D24D57;
+	background: #D24D57;
+	color: #ffffff;
+	padding: 10px 20px;
+	margin: 0;
+	margin-top: 25px;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 1px solid #27ae60;
+	background: #27ae60;
+	color: #ffffff;
+	padding: 10px 20px;
+	margin: 0;
+	margin-top: 25px;
+}
+
+textarea.wpcf7-not-valid {
+	border: 1px solid #D24D57;
+}
+
+textarea {
+	padding: 10px;
+	width: 100%;
+	height: 265px;
+	border: 1px solid #57666e;
+	background: transparent;
+	resize: none;
+}
+
+textarea:hover, textarea:focus {
+	outline: none;
+}
+
+
 /* logo */
 .logo {
 	width: 100px;
@@ -307,6 +409,7 @@ main {
 	max-width: 1024px;
 	display: block;
 	margin: 0 auto;
+	padding: 0 40px;
 }
 
 .logo-img {
@@ -421,6 +524,7 @@ main {
 
 .fotoalbum-container {
 	position: relative;
+	padding: 0 40px;
 }
 
 .fotoalbum-container-images, .fotoalbum-container-content {
@@ -499,6 +603,7 @@ main {
 	position: relative;
 	display: block;
 	margin: 0px auto;
+	padding: 0 40px;
 }
 
 .footer-bottom-left {
@@ -743,6 +848,129 @@ a img.aligncenter {
 }
 .bypostauthor {
 
+}
+
+@media screen and (max-width: 1440px) {
+	.metaslider .slides img {
+		height: 600px;
+	}
+}
+
+@media screen and (max-width: 1240px) {
+	.metaslider .slides img {
+		height: 500px;
+	}
+	.metaslider h1 {
+		max-width: none;
+		margin: 0 auto;
+		padding: 100px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	h1{
+		font-family: Roboto-Bold;
+		font-size: 32px;
+		font-weight: 100 !important;
+	}
+	h2{
+		font-family: Roboto-Regular;
+		font-size: 24px;
+		font-weight: 100 !important;
+	}
+	h3{
+		font-family: Roboto-Medium;
+		font-size: 24px;
+		font-weight: 100 !important;
+	}
+
+	h4 {
+		font-family: Roboto-Light;
+		font-size: 16px;
+		font-style: italic;
+		font-weight: 100 !important;
+	}
+	h4 span {
+		font-family: Roboto-Bold;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 100 !important;
+	}
+	body {
+		font-size: 14px;
+	}
+	.nav-block {
+		height: 120px;
+	}
+	.footer-container-main {
+		padding-bottom: 40px !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	label#contact-message {
+		position: relative;
+		width: 100%;
+	}
+	input[type='submit'] {
+		margin-top: 70px;
+	}
+	input[type='text'], input[type='email'] {
+		width: 100%;
+	}
+	.nav-block {
+		width: 33.334%;
+	}
+	.nav-block.last-2 {
+		width: 50%;
+	}
+	.fotoalbum-container-content {
+		float: none;
+		max-width: none;
+	}
+	.fotoalbum-container-images {
+		width: 260px;
+		margin: 0 auto;
+		display: block;
+		padding-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.metaslider .slides img {
+		height: 400px;
+	}
+	.metaslider h1 {
+		max-width: none;
+		margin: 0 auto;
+		padding: 40px;
+	}
+	.footer-block {
+    float: none;
+    width: 100%;
+		text-align: center;
+    vertical-align: top;
+    margin: 40px auto;
+	}
+	.footer-container-main {
+		padding-bottom: 0px !important;
+	}
+	.footer-block-4 {
+		width: 125px;
+	}
+	.footer-container-main {
+		padding-top: 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	input[type='submit'] {
+		width: 100%;
+	}
+	.nav-block, .nav-block.last-2 {
+		width: 100%;
+		float: none;
+	}
 }
 
 /*------------------------------------*\

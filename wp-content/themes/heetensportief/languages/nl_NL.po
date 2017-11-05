@@ -22,7 +22,7 @@ msgstr "Pagina niet gevonden"
 
 #: ../404.php:10
 msgid "Return home?"
-msgstr "Terg naar home?"
+msgstr "Navigeer terug naar de home pagina"
 
 #: ../archive.php:6
 msgid "Archives"
