@@ -82,6 +82,7 @@
                 echo '<a href="' . get_permalink() . '">Lees meer ></a>';
                 echo '</div>';
             }
+            echo "<span class='more-news'>Klik <a href='/category/nieuws'>hier</a> voor al onze nieuwsartiekkelen!</span>";
             /* Restore original Post Data */
             wp_reset_postdata();
         } else {
@@ -96,7 +97,7 @@
     <div class="sponsors-container-content">
         <h2>Heeten Sportief <span>bedankt</span> al onze sponsors voor het mogelijkmaken van deze sportvereniging</h2>
         <img src="/wp-content/themes/heetensportief/img/arrow-right.png">
-        <p>Klik <a href="/sponsors.php">hier</a> om al onze sponsors te bekijken</p>
+        <p>Klik <a href="/sponsors">hier</a> om al onze sponsors te bekijken</p>
     </div>
 </div>
 
